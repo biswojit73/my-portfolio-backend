@@ -32,3 +32,8 @@ async def voice_control(request: VoiceRequest):
         "message": f"You said: {request.text}",
         "response": ai_response
     }
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="0.0.0.0", port=8000)
+
