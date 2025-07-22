@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-openai.api_key = os.getenv("GROQ_API_KEY")
+openai.api_key = os.getenv("OPENAI_API_KEY")
 openai.base_url = "https://api.groq.com/openai/v1"  # ✅ Correct attribute name
 
 def get_groq_response(prompt: str) -> str:
